@@ -3,7 +3,7 @@ import { SortingField } from "./SortingField";
 import styles from "./sort.module.css";
 type Props = {
   sort: Sort;
-  setSort: any;
+  setSort: React.Dispatch<React.SetStateAction<Sort>>;
 };
 export const SortControls = ({ sort, setSort }: Props) => {
   const handleFieldClick = (

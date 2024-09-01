@@ -9,7 +9,7 @@ import {
 } from "../../MockData/types";
 type Props = {
   filtersValue: Filters;
-  setFiltersValue: any;
+  setFiltersValue: React.Dispatch<React.SetStateAction<Filters | undefined>>;
 };
 export const FiltersControl = ({ filtersValue, setFiltersValue }: Props) => {
   return (
@@ -68,7 +68,7 @@ export const FiltersControl = ({ filtersValue, setFiltersValue }: Props) => {
       <Button
         danger
         onClick={() => {
-          setFiltersValue({});
+          setFiltersValue(undefined);
         }}
       >
         Clear filters
