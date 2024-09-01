@@ -1,0 +1,27 @@
+.filtersWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+
+    h2 {
+        color: var(--black);
+    }
+
+    .filter {
+        min-width: 100px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+.ant-dropdown-button>button {
+    width: 110px;
+    overflow: hidden;
+}
+
+.ant-dropdown-button>button>span {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

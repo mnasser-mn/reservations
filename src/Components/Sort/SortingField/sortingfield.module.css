@@ -1,0 +1,19 @@
+.field {
+    margin: 5px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    background-color: var(--pale-chestnut);
+    color: var(--white);
+}
+
+.field:hover,
+.field:hover {
+    background-color: var(--pale-chestnut) !important;
+    border: unset !important;
+    color: var(--white) !important;
+}
+
+.dimmed {
+
+    color: var(--gray)
+}
